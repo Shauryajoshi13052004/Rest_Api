@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 8000;
+const port = 8000 || process.env.port;
 require('./db/conn')
 const Student = require('./models/students')
     
