@@ -16,6 +16,10 @@ app.use(express.json());
 // });
 
 // try-catch block
+
+app.get('/',(req,res) =>{
+    res.send('hoo')
+})
 app.post("/students",async (req,res) =>{
     try{
         console.log(req.body)
