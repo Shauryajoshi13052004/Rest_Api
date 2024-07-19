@@ -18,7 +18,7 @@ app.use(express.json());
 // try-catch block
 
 app.get('/',(req,res) =>{
-    res.send('hoo')
+    res.json({message:"hello"})
 })
 app.post("/students",async (req,res) =>{
     try{
